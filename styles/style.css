@@ -1,4 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
+}
+
+/* Css TIME */
+.timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    font-size: 32px;
+    text-shadow: -1px 0px 15px rgba(0, 0, 0, 0.25);
+    color: rgb(129, 127, 127);
+}
+
+.number {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 100px;
+    text-shadow: -1px 0px 15px rgba(8, 7, 7, 0.25);
+    border: none;
+    color: rgb(78, 76, 76);
+}
+
+.timer-button {
+    margin: 20px;
+    margin-right: 20px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+/* Css Blender */
 
 .blender {
     display: flex;

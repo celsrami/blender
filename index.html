@@ -3,20 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>blender</title>
-    <!-- Google Fonts
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    -->
-    <!-- Icons
-    
-    -->
+    <title>Blender</title>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="/images/favicon.png" />
   </head>
   <body>
     <header></header>
     <main class="main">
-      <section class="timer"></section>
+      <section class="timer">
+        <form class="clock">
+          <input id="hs" type="text" class="number" value="00" />
+          <label for="hs" class="label js-label">hs</label>
+          <input id="min" type="text" class="number" value="00" />
+          <label for="min" class="label js-label">min</label>
+          <input id="sg" type="text" class="number" value="00" />
+          <label for="sg" class="label js-label">sg</label>
+
+          <button id="play" type="button" class="js-play timer-button">
+            <i class="fa-solid fa-play fa-beat-fade"></i>
+          </button>
+          <button id="stop" type="button" class="js-stop timer-button">
+            <i class="fa-solid fa-hand"></i>
+          </button>
+        </form>
+      </section>
       <section class="container">
         <article class="blender" id="blender">
           <div
