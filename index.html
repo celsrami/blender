@@ -22,7 +22,7 @@
     <link rel="icon" href="/images/favicon.png" />
   </head>
   <body>
-    <header></header>
+    <header class="header"></header>
     <main class="main">
       <section class="timer">
         <form class="clock">
@@ -32,7 +32,8 @@
           <label for="min" class="label js-label">min</label>
           <input id="sg" type="text" class="number" value="00" />
           <label for="sg" class="label js-label">sg</label>
-
+        </form>
+        <form>
           <button id="play" type="button" class="js-play timer-button">
             <i class="fa-solid fa-play fa-beat-fade"></i>
           </button>
@@ -60,6 +61,7 @@
       src="./sounds/licuadora.mp3"
       type="audio/mpeg"
       id="js-blender-sound"
+      loop
     ></audio>
     <script src="./js/main.js"></script>
   </body>
