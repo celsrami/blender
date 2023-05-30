@@ -22,15 +22,22 @@
     <link rel="icon" href="/images/favicon.png" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <h1 class="title">Click play or use the timer</h1>
+    </header>
     <main class="main">
       <section class="timer">
-        <form class="clock">
-          <input id="hs" type="text" class="number" value="00" />
+        <form class="clock js-clock">
+          <input id="hs" type="text" class="number js-input" placeholder="00" />
           <label for="hs" class="label js-label">hs</label>
-          <input id="min" type="text" class="number" value="00" />
+          <input
+            id="min"
+            type="text"
+            class="number js-input"
+            placeholder="00"
+          />
           <label for="min" class="label js-label">min</label>
-          <input id="sg" type="text" class="number" value="00" />
+          <input id="sg" type="text" class="number js-input" placeholder="00" />
           <label for="sg" class="label js-label">sg</label>
         </form>
         <form>
@@ -51,7 +58,7 @@
         </article>
       </section>
     </main>
-    <footer></footer>
+    <audio src="./sounds/alarm.mp3" type="audio/mpeg" id="js-alarm"></audio>
     <audio
       src="./sounds/botonLicuadora.mp3"
       type="audio/mpeg"

@@ -2,18 +2,31 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'roboto', sans-serif;
 
 }
 
 .header {
-    height: 70px;
+    height: 150px;
     background-color: rgb(154 110 185);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
+    opacity: 0.6;
     width: 100vw;
+    
+}
+
+.title {
+    padding: 10px;
+text-align: left;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+
 }
 
 .main {
@@ -22,10 +35,12 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+
 }
 
 /* Css TIME */
 .timer {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,19 +55,25 @@
 
 .number {
     display: inline-block;
-    width: 110px;
+    width: 45px;
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 100px;
+    font-family: 'roboto', sans-serif;
+    font-size: 80px;
     text-shadow: -1px 0px 15px rgba(8, 7, 7, 0.25);
     border: none;
     color: rgb(78, 76, 76);
-    background-color: transparent;
-}
+    background-color: transparent;}
+
+ @media all and (min-width: 740px) {
+    .number {
+    width: 110px;
+    font-size: 100px;
+}}
+
+
 
 .timer-button {
-    margin: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
     color: rgb(121, 107, 131);
     font-size: 32px;
     font-weight: 700;
@@ -60,6 +81,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    margin-bottom: 20px;
 }
 
 
@@ -69,7 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 320px;
     height: 500px;
     background-image: url("../images/licuadoraApagada.png");
     background-size: contain;
@@ -78,11 +100,26 @@
 }
 
 .blender-button {
-    margin: 350px auto 0px;
-    width: 70px;
-    height: 70px;
+    margin: 172px auto 0px;
+        width: 55px;
+        height: 60px;
+
 }
 
 .blender.active {
     background-image: url("../images/licuadoraEncendida.gif");
 }
+
+
+ @media all and (min-width: 768px) {
+    .blender {
+        width: 800px;
+        height: 400x;
+        }
+
+        .blender-button {
+            margin: 285px auto 0px;
+            
+        }
+     }
+ 
