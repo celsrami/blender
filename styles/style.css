@@ -6,21 +6,24 @@
 
 }
 
+body {
+    display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+}
+
 .header {
     height: 150px;
     background-color: rgb(154 110 185);
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.6;
-    width: 100vw;
-    
+    opacity: 0.6;  
 }
 
-.title {
+.title {text-align: center;
     padding: 10px;
-text-align: left;
     font-family: Arial Black;
     font-weight: bold;
     font-size: 30px;
@@ -34,7 +37,8 @@ text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    flex-grow: 1;
+    overflow: auto;
 
 }
 
@@ -55,10 +59,10 @@ text-align: left;
 
 .number {
     display: inline-block;
-    width: 45px;
+    width: 90px;
     text-align: center;
     font-family: 'roboto', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     text-shadow: -1px 0px 15px rgba(8, 7, 7, 0.25);
     border: none;
     color: rgb(78, 76, 76);
@@ -97,6 +101,7 @@ text-align: left;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 50px;
 }
 
 .blender-button {
@@ -121,5 +126,6 @@ text-align: left;
             margin: 285px auto 0px;
             
         }
+
      }
  
